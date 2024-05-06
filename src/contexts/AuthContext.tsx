@@ -4,7 +4,6 @@ import UsuarioLogin from "../models/UsuarioLogin"
 import { login } from "../services/Service"
 // import { toastAlerta } from "../utils/toastAlerta"
 
-// 
 interface AuthContextProps {
     usuario: UsuarioLogin
     handleLogout(): void
@@ -15,7 +14,7 @@ interface AuthContextProps {
 interface AuthProviderProps {
     children: ReactNode
 }
-// CONSTRUÇÃO INICIAL DO CONTEXT DE ARMAZENAMENTO 
+
 export const AuthContext = createContext({} as AuthContextProps)
 
 export function AuthProvider({ children }: AuthProviderProps) {
